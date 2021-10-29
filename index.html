@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Be Planned</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>BePlanned</h1>
+    <br></br>
+    
+    <div id="allSections">
+      <div id="drinkWater">
+        <button onclick = "waterButton()" ondblclick=""> Water Alert </button>
+      </div>
+
+      <div id="firstRaw">
+
+        <div id="phrases" class="sections">
+          <h2> Phrases Lottery </h2>
+          <button onclick="phrase_lottery()">press for an inspirational quote</button onclick>
+          <div id="sentences">
+          </div>  
+        </div>
+        
+        <div id="remind" class="sections"> 
+          <h2>Don’t Forget!</h2>
+          <button onclick = "remainder()"> Set a reminder </button>
+          <ul id = "remainders">
+          </ul>
+        </div>
+      </div>
+      
+      <div id="secondRaw">
+
+        <div id="music" class="sections">
+          <h2>Music</h2>
+          <a href = "link"> <iframe src="https://open.spotify.com/embed/playlist/4ZRetHpFDbCOV4fc7N7WOL" width="500" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></a>
+        </div> 
+
+        <div id="todo" class="sections">
+          <h2>TDL</h2>
+          <button onclick="addTask()">+</button>
+          <br></br>
+          <div id="TDL">
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="Timer" class="sections">
+        <h2 id="hello">timer</h2>
+        <div>
+          <button id="button1", onClick="click1()"> Start </button>
+          <button id="resetButton", onClick="clearTimer()"> Restart </button>
+          <h3 id="clock"> __:__ </h3>
+
+          <p/>
+          <canvas id="progressBar", width=500, height=50></canvas>
+        </div>
+      </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
